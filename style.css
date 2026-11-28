@@ -1,0 +1,138 @@
+/* Recall4D project page: title, authors, links, video, update, citation. */
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+.link-block .button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.publication-authors {
+  font-family: 'Google Sans', sans-serif;
+}
+.publication-authors a {
+  color: hsl(204, 86%, 53%) !important;
+}
+.publication-authors a:hover {
+  text-decoration: underline;
+}
+.author-block {
+  display: inline-block;
+}
+.github-icon {
+  display: inline-block;
+  width: .96875em;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -.125em;
+}
+.hero .hero-body {
+  padding-bottom: 2.25rem;
+}
+.section .title:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+/* Project title and responsive subtitle. */
+.paper-title {
+  max-width: 1100px;
+  margin: 0 auto 32px;
+  color: #000;
+  font-family: 'PT Serif', 'Times New Roman', Times, serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.method-name {
+  font-size: clamp(24px, 2.7vw, 36px);
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: normal;
+  line-height: 1.1;
+}
+.paper-subtitle {
+  font-family: inherit;
+  max-width: 1050px;
+  font-size: clamp(24px, 2.7vw, 36px);
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 1.3;
+  text-wrap: balance;
+}
+@media (max-width: 768px) {
+  .paper-title {
+    padding: 0 16px;
+    gap: 4px;
+  }
+}
+
+/* A personal update beneath the project links. */
+.project-update {
+  padding: 1.5rem 1.5rem 3rem;
+}
+.update-content {
+  max-width: 960px;
+  margin: 0 auto;
+  color: #4a4a4a;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+.update-content h2 {
+  margin: 0 0 2rem;
+  color: #363636;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.125;
+  text-align: center;
+}
+.update-content p + p {
+  margin-top: 1rem;
+}
+.update-content strong {
+  color: inherit;
+  font-weight: 600;
+}
+
+/* Overview video, shown in a soft white card. */
+.project-video {
+  padding: 0 1.5rem 3rem;
+}
+.media-card {
+  padding: clamp(8px, 1.2vw, 16px);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, .08), 0 1px 3px rgba(0, 0, 0, .05);
+}
+.media-card video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  background: #f5f3ee;
+}
+
+/* ---- Citation ---- */
+.paper-citation {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.paper-citation pre {
+  width: 100%;
+  margin: 18px 0 0;
+  padding: 18px 20px;
+  box-sizing: border-box;
+  border: 1px solid #e5e3df;
+  border-radius: 8px;
+  background: #fbfcfe;
+  color: #30343a;
+  white-space: pre-wrap;
+  word-break: break-word;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .035);
+}
+.paper-citation code {
+  color: inherit;
+  font-size: 13px;
+  line-height: 1.5;
+}
